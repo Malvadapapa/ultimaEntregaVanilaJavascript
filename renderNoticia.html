@@ -5,24 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Integrador JS</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d7a00b9964.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Source+Sans+Pro:ital,wght@1,700&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/d7a00b9964.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+       <div class="headerColorContainer">
+            
+
     <header class="headerSection">
+ 
         <nav class="menusearchContainer">
             <div class="headerMenu">
-                <i class="fa-solid fa-bars"></i>
-                <p> MENÚ</p>
+
+                <div class="container" id="burgerMenu">
+                    <div class="menu">
+                        <span class="line one"></span>
+                        <span class="line two"></span>
+                        <span class="line three"></span>
+                    </div>
+                </div>
+
+
+                
             </div>
 
             <input type="search" class="searchbox" name="" id="" placeholder="    BUSCAR">
@@ -30,15 +43,105 @@
         </nav>
         <a href="index.html"><img src="assets/logo-header.svg" alt=""></a>
         <div class="profileSection">
-            <img src="assets/profileImg/female1.svg" alt="">
-            <p>Mi Perfil</p>
+            <div class="profileContainer">
+                <img src="assets/profileImg/female1.svg" alt="">
+                <p>Mi Perfil</p>
+            </div>
+            <div class="notLoggedOnProfileContainer">
+
+                <button id="session" class="type3">Iniciar Sesion</button>
+
+                <a href="register.html">Registrarse</a>
+            </div>
+
         </div>
 
     </header>
+        </div>
 
-    <section id="burguerMenu">
+
+
+
+<div class="categoriesColorContainer">
+    <section class="categoriesSection">
+
+        <button class="categoriesCard" data-category="UltimasNoticias" id="BreakingNews">
+            Ultimas Noticias
+        </button>
+        <button class="categoriesCard" data-category="Politica" id="Politics">
+            Política
+        </button>
+
+        <button class="categoriesCard" data-category="Economia" id="Economy">
+            Economía
+        </button>
+
+        <button class="categoriesCard" data-category="Sucesos" id="Events">
+            Sucesos
+        </button>
+        <button class="categoriesCard" data-category="Negocios" id="business">
+            Negocios
+        </button>
+
+        <button class="categoriesCard" data-category="Tecno" id="tech">
+            Tecnología
+        </button>
 
     </section>
+</div>
+
+<section class="burgerSection" id="burgerBlurSection">
+    <div class="burguerMenuContainer" id="burgerContainer" >
+ 
+        <ul>
+            <li><a href="#">Categorias</a>
+            <ul>
+                <li>Ultimas Noticias</li>
+                <li>Politica</li>
+                <li>Economia</li>
+                <li>Sucesos</li>
+                <li>Negocios</li>
+                <li>Tecnologia</li>
+            </ul>
+            </li>
+            <li><a href="#">Mi Perfil</a>
+            <ul>
+<li>Modificar Perfil</li>
+<li>Articulos Guardados</li>
+<li>Cerrar Sesion</li>
+            </ul>
+            </li>
+            <li><a href="#">Institucional</a>
+            <ul>
+                <li>Sobre el Editor</li>
+                <li>La Empresa</li>
+                <li>Redaccion</li>
+                <li>Normas Éticas</li>
+            </ul>
+            </li>
+            <li><a href="#">Grupo La Docta</a>
+            <ul>
+                <li>Anúnciese con nosotros</li>
+                <li>Términos y condiciones</li>
+                <li>Mapa del Sitio</li>
+                <li>Ayuda</li>
+            </ul>
+            </li>
+            <li><a href="#">Sobre Nosotros</a>
+            <ul>
+                <li>Sobre Nosotros</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </li>
+
+           </ul>
+    </div>
+    </section>
+
+
+
 
 
 
@@ -194,6 +297,8 @@ Para el abogado, el hecho de que Brenda cambie su defensa “no es bueno”. “
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
+    <script src="variables&data.js"></script>
     <script src="renderNoticia.js"></script>
 </body>
 

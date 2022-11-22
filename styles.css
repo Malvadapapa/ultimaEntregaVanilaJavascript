@@ -320,6 +320,9 @@ li {
 .notLoggedOnProfileContainer a {
     color: rgb(0, 0, 0);
 }
+.notLoggedOnProfileContainer a:hover{
+    color: red;
+}
 
 .notLoggedOnProfileContainer a:active {
     transform: translateY(2px);
