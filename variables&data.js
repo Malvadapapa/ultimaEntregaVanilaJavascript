@@ -1,10 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const diario =
     [{
         id: 1,
         categoria: "Ciudadanos",
         titular: "En Córdoba, 3.573 migrantes reclamaron por dificultades de acceso a derechos",
         img: [".assets\imgNoti\id1\1.jpg",".assets\imgNoti\id1\2.jpg"],
-        txt: `En los últimos 16 meses, el programa Estación Migrante para personas migrantes y refugiadas en Córdoba -que impulsan el Ministerio de la Mujer y la Secretaría de Derechos Humanos del Ministerio de Justicia de la Provincia- recibieron 3.573 reclamos de inmigrantes residentes en esta provincia por dificultades en el acceso a derechos.
+        txt: ` <p> En los últimos 16 meses, el programa Estación Migrante para personas migrantes y refugiadas en Córdoba -que impulsan el Ministerio de la Mujer y la Secretaría de Derechos Humanos del Ministerio de Justicia de la Provincia- recibieron 3.573 reclamos de inmigrantes residentes en esta provincia por dificultades en el acceso a derechos. </p>
 
         Los casos fueron derivados para su atención a 225 instituciones nacionales, provinciales, municipales y organizaciones de la sociedad civil.
         

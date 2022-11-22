@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d7a00b9964.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+       <div class="headerColorContainer">
+            
+
+    <header class="headerSection">
+ 
+        <nav class="menusearchContainer">
+            <div class="headerMenu">
+
+                <div class="container" id="burgerMenu">
+                    <div class="menu">
+                        <span class="line one"></span>
+                        <span class="line two"></span>
+                        <span class="line three"></span>
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+            <input type="search" class="searchbox" name="" id="" placeholder="    BUSCAR">
+
+        </nav>
+        <a href="index.html"><img src="assets/logo-header.svg" alt=""></a>
+        <div class="profileSection">
+            <div class="profileContainer">
+                <img src="assets/profileImg/female1.svg" alt="">
+                <p>Mi Perfil</p>
+            </div>
+            <div class="notLoggedOnProfileContainer">
+
+                <button id="session" class="type3">Iniciar Sesion</button>
+
+                <a href="register.html">Registrarse</a>
+            </div>
+
+        </div>
+
+    </header>
+        </div>
+
+
+
+
+<div class="categoriesColorContainer">
+    <section class="categoriesSection">
+
+        <button class="categoriesCard" data-category="UltimasNoticias" id="BreakingNews">
+            Ultimas Noticias
+        </button>
+        <button class="categoriesCard" data-category="Politica" id="Politics">
+            Política
+        </button>
+
+        <button class="categoriesCard" data-category="Economia" id="Economy">
+            Economía
+        </button>
+
+        <button class="categoriesCard" data-category="Sucesos" id="Events">
+            Sucesos
+        </button>
+        <button class="categoriesCard" data-category="Negocios" id="business">
+            Negocios
+        </button>
+
+        <button class="categoriesCard" data-category="Tecno" id="tech">
+            Tecnología
+        </button>
+
+    </section>
+</div>
+
+<section class="burgerSection" id="burgerBlurSection">
+    <div class="burguerMenuContainer" id="burgerContainer" >
+ 
+        <ul>
+            <li><a href="#">Categorias</a>
+            <ul>
+                <li>Ultimas Noticias</li>
+                <li>Politica</li>
+                <li>Economia</li>
+                <li>Sucesos</li>
+                <li>Negocios</li>
+                <li>Tecnologia</li>
+            </ul>
+            </li>
+            <li><a href="#">Mi Perfil</a>
+            <ul>
+<li>Modificar Perfil</li>
+<li>Articulos Guardados</li>
+<li>Cerrar Sesion</li>
+            </ul>
+            </li>
+            <li><a href="#">Institucional</a>
+            <ul>
+                <li>Sobre el Editor</li>
+                <li>La Empresa</li>
+                <li>Redaccion</li>
+                <li>Normas Éticas</li>
+            </ul>
+            </li>
+            <li><a href="#">Grupo La Docta</a>
+            <ul>
+                <li>Anúnciese con nosotros</li>
+                <li>Términos y condiciones</li>
+                <li>Mapa del Sitio</li>
+                <li>Ayuda</li>
+            </ul>
+            </li>
+            <li><a href="#">Sobre Nosotros</a>
+            <ul>
+                <li>Sobre Nosotros</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </li>
+
+           </ul>
+    
+    
+    
+    
+    </div>
+    </section>
+
+
+
+
+
+</div>
+</section>
+
+
+    
+    <div class="background">
+
+
+        <section class="formContainer">
+
+            <form action="" class="form" id="form" autocomplete="off">
+                <h2>¡Registrate y Mantenete informado!</h2>
+
+                <div class="form_field">
+                    <input type="text" id="myname" autocomplete="off" placeholder=" " class="form_input">
+                    <label for="myname" class="form_label">Nombre de Usuario</label>
+
+
+
+                    <small></small>
+
+                </div>
+
+                <div class="form_field">
+                    <input type="text" id="realName" autocomplete="off" class="form_input" placeholder=" ">
+                    <label for="surname" class="form_label">Nombre Completo</label>
+
+
+
+                    <small></small>
+                </div>
+
+                <div class="form_field">
+                    <input type="email" id="email" autocomplete="off" class="form_input" placeholder=" ">
+                    <label for="email" class="form_label">Correo electrónico</label>
+
+
+
+                    <small></small>
+
+                </div>
+
+
+                <div class="form_field">
+                    <input type="password" id="password" autocomplete="off" class="form_input" placeholder=" ">
+                    <label for="password" class="form_label">Contraseña</label>
+
+
+
+
+                    <small></small>
+
+                </div>
+                <div class="form_field">
+
+                    <input type="password" id="repeatPassword" autocomplete="off" class="form_input" placeholder=" ">
+                    <label for="repeatPassword" class="form_label">Repetir Contraseña</label>
+
+
+                    <small></small>
+
+                </div>
+
+                <div class="form_field">
+                    <div class="form_terms">
+                        <label for="termsAndConditions">He leído y acepto los <a href="#">Términos y Condiciones</a>
+                        </label>
+                        <input type="checkbox" id="termsAndConditions">
+                          <small></small>
+                    </div>
+                  
+
+                </div>
+
+                <div class="form-buttonContainer">
+
+                    <button class="form_button"> <span>¡Registrarme!</span> </button>
+
+                </div>
+
+    
+
+            </form>
+        </section>
+
+     
+
+<div class="form_imgContainer">
+    <lottie-player   src="https://lottie.host/9fdb5001-d199-49a8-920f-963fbaaca5b3/j7d86jt8rP.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+</div>
+
+    </div>
+    <footer class="footer">
+
+        <div class="footer__container">
+            <div class="footer__top">
+                <div>
+                    <h6 class="footer__title">Mi Perfil</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Modificar Perfil</a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Articulos Guardados</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Cerrar Sesion </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="footer__title">Institucional</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">Sobre el Editor</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">La Empresa</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Redaccion </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Normas Éticas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="footer__title">Grupo La Docta</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Anúnciese con nosotros</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Términos y condiciones</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Mapa del Sitio</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="footer__title">Sobre Nosotros</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sobre Nosotros</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Facebook</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Twitter</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer__divider">
+
+            <div class="footer__bottom">
+                <p>Copyright © 2022 &lt;Pro-coders/&gt; | Design By <span> Malvada Papa</span> Cordoba - Argentina</p>
+
+            </div>
+        </div>
+    </footer>  
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script src="variables&data.js"></script>
+    <script src="main.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
