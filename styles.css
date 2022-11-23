@@ -534,6 +534,15 @@ body::-webkit-scrollbar-thumb {
 
 
 /*ESTILOS DE LA SECCION DE PRIMER ULTIMA NOTICIA*/
+.noti_index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px auto;
+ 
+}
 .ultimasNoticiasSection{
     width: 90%;
     margin-top: 15px;
@@ -625,6 +634,8 @@ width: 100%;
     display: flex;
     flex-direction: column;
     width: 90%;
+ margin-top: 15px;
+
 }
 .politicaTitle{
      background-color: #0b3685;
@@ -633,6 +644,7 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 .politicaTitle h2{
     font-weight: bolder;
@@ -651,6 +663,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin-top: 15px;
 }
 .economiaTitle{
     background-color: #f18a29;
@@ -659,10 +672,67 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 
 .economiaSection a{
     color: black;
+}
+.sucesosSection{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+}
+.sucesosSection a{
+    color: black;
+}
+.sucesosTitle{
+    background-color: #db1919;
+    color: #FAFAFA;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.negociosSection{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+}
+.negociosSection a{
+    color: black;
+}
+.negociosTitle{
+    background-color: #4c1b74;
+    color: #FAFAFA;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.tecnologiaSection{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+}
+.tecnologiaSection a{
+    color: black;
+}
+.tecnologiaTitle{
+    background-color: #61a732;
+    color: #FAFAFA;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
 /*ESTILOS DEL FORM DE REGISTRO*/
 .form {
@@ -949,9 +1019,10 @@ width: 100%;
 }
 
 .footer__divider {
-    margin-block: 2.5rem;
+    margin: 15px auto;
     margin-bottom: 15px;
-    border: 1px solid rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .footer__bottom {
