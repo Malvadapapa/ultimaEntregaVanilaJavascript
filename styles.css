@@ -66,6 +66,7 @@ body::-webkit-scrollbar-thumb {
     top: 0px;
     height: 100PX;
     z-index: 1;
+ 
 }
 
 .headerSection {
@@ -77,7 +78,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     gap: 20px;
     padding: 15px;
-
+    border-bottom: 2px solid black;
 
     background-color: #fff;
     color: #000;
@@ -103,9 +104,6 @@ body::-webkit-scrollbar-thumb {
     height: 90px;
     position: relative;
 }
-
-
-
 
 .container {
     position: absolute;
@@ -430,75 +428,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(2px);
 }
 
-
-/*SECCION DE CATEGORIAS*/
-.categoriesColorContainer {
-    z-index: 2;
-    position: sticky;
-    top: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: solid 2px #17232f;
-    border-bottom: solid 2px #17232f;
-    background-color: #6a7685;
-}
-
-.categoriesSection {
-    width: 90%;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    font-family: 'Open Sans', 'sans-serif';
-}
-
-.categoriesCard {
-    font-size: 18px;
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.categoriesCard:active {
-    transform: translateY(2px);
-}
-
-.categoriesCard:nth-child(1):hover {
-    transition: all 0.1s;
-    color: #990f0f;
-    ;
-}
-
-.categoriesCard:nth-child(2):hover {
-    transition: all 0.1s;
-    color: #0b3685;
-}
-
-.categoriesCard:nth-child(3):hover {
-    transition: all 0.1s;
-    color: #1048b2;
-}
-
-.categoriesCard:nth-child(4):hover {
-    transition: all 0.1s;
-    color: #1048b2;
-}
-
-.categoriesCard:nth-child(5):hover {
-    transition: all 0.1s;
-    color: #1048b2;
-}
-
-.categoriesCard:nth-child(6):hover {
-    transition: all 0.1s;
-    color: #1048b2;
-}
-
 /* dolarandWeatherSection */
 .dolarandWeatherSection {
     display: flex;
@@ -707,7 +636,7 @@ width: 100%;
     color: black;
 }
 .negociosTitle{
-    background-color: #4c1b74;
+    background-color: #9faa02;
     color: #FAFAFA;
     height: 60px;
     display: flex;
@@ -726,7 +655,7 @@ width: 100%;
     color: black;
 }
 .tecnologiaTitle{
-    background-color: #61a732;
+    background-color: #4c1b74;
     color: #FAFAFA;
     height: 60px;
     display: flex;
