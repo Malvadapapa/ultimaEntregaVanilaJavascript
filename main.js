@@ -107,7 +107,6 @@ return noticiasPoliticaFiltradas.map(renderCategoriaPolitica)
 const renderCategoriaPolitica = (noticiasPoliticaFiltradas) => {
  
     const {categoria, titular, img, id} = noticiasPoliticaFiltradas;
-    console.log(img[0])
     return printPoliticaCards.innerHTML += ` 
     <div class="ultimaNoticia_card">
     <a href="renderNoticia.html?id=${id}">
