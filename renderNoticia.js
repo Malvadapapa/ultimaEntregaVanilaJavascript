@@ -1,3 +1,4 @@
+//contenedor de las noticias renderizadas en el html renderNoticia
 const newContainer = document.getElementById("noticiaSectionContainer")
 
 //funcion que extrae el valor query de la pagina para renderizar la noticia en la correspondiente seccion//

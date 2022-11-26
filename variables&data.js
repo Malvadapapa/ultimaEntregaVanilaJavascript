@@ -1,31 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const diario =
     [{
         id: 1,
@@ -1814,7 +1787,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 35,
         categoria: "NEGOCIOS",
         titular: "Nuevocentro Shoppping espera en días dos inauguraciones fuertes para dar un salto de público    ",
-        img: ["assets/imgNoti/id35/1.jpg", "assets/imgNoti/id35/2.jpg"],
+        img: ["/assets/imgNoti/id35/1.jpg"],
         txt: `
     <p><b>El centro comercial invirtió 2 millones de dólares en reconvertir el espacio que dejó Falabella. Y activó 40 nuevas propuestas. Las novedades que siguen.</b></p>
     
@@ -2132,7 +2105,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 41,
         categoria: "CIUDADANOS",
         titular: "Leyes de género: hay muchas normas en el país, pero son difíciles de aplicar        ",
-        img: ["assets/imgNoti/id41/1.jpg", "assets/imgNoti/id41/2.jpg"],
+        img: ["assets/imgNoti/id41/1.jpg"],
         txt: `
     <p><b>Este viernes es el Día de la Eliminación de la Violencia contra las Mujeres. Argentina es uno de los países con más legislación en la materia, aunque su implementación no siempre es fácil.</b></p>
     
