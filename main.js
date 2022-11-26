@@ -30,7 +30,7 @@ const printSucesosCards = document.getElementById("sectionSucesos")
 const printNegociosCards = document.getElementById("sectionNegocios")
 const printTecnologiaCards = document.getElementById("sectionTeconologia")
 const printlastestCards = document.getElementById("lastestNewsCards")
-
+const printLastNewHeroCard = document.getElementById("heroLastNew")
 
 
  //TOGGLE DE MENU HAMBURGUESA//

@@ -1,4 +1,28 @@
+const renderHeroNew =() => {
+    const randomHeroNew = diario.sort(function() { return Math.random() - 0.3 })
+    const randomslicedHeroNew = randomHeroNew.slice(randomHeroNew.length-1)
+    
+    
+    return randomslicedHeroNew.map(renderLastestHeroNewCards)
+    }
+    const renderLastestHeroNewCards = (randomslicedheroNew) => {
+     
+        const {categoria, titular, img, id, autor, txt} = randomslicedheroNew;
+        return printLastNewHeroCard.innerHTML += ` 
+        <a href="renderNoticia.html?id=${id}">       
+        <img src="${img[0]}" alt="">
 
+    <div class="ultimasNoticias_principalContainer__new">
+        <h3>${categoria}</h3>
+        <h1>${titular.slice(0,65)}...</h1>
+        <h2>${txt.slice(0,100)}...CONTINUAR VIENDO
+        </h2>
+        <h4>Autor: ${autor}</h4>
+    </div>
+</a>
+          `;
+    };
+    
 const renderLastestNews =() => {
 const randomNew = diario.sort(function() { return Math.random() - 0.3 })
 const randomslicedNew = randomNew.slice(randomNew.length-4)
@@ -12,7 +36,7 @@ const renderLastestNewsCards = (randomslicedNew) => {
     return printlastestCards.innerHTML += ` 
     <div class="ultimaNoticia_card">
     <a href="renderNoticia.html?id=${id}">
-        <img src="${img}" alt="">
+        <img src="${img[0]}" alt="">
         <h4>${categoria}</h4>
         <h2> ${titular}
         </h2>
@@ -171,8 +195,8 @@ const renderCategoriaTecnologia = (noticiasTecnologiaFiltradas) => {
 
       `;
 };
-
-renderLastestNews ()
+renderHeroNew()
+renderLastestNews()
 newFilteredByCategoryNegocios()
 newFilteredByCategoryPolitica()
 newFilteredByCategoryCiudadanos()

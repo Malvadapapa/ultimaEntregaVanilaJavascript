@@ -1537,7 +1537,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 30,
         categoria: "NEGOCIOS",
         titular: "Son amigos e ingenieros, e idearon un alfajor tradicional para Río Cuarto    ",
-        img: ["assets/imgNoti/id30/1.jpg", "assets/imgNoti/id30/2.jpg"],
+        img: ["./assets/imgNoti/id30/1.jpg", "./assets/imgNoti/id30/2.jpg"],
         txt: `
     <p><b>Llevan ocho años con un emprendimiento familiar que ya ha logrado varios premios y ahora crece con cafeterías, chocolates, y venta de té y de tisanas.</b></p>
     
@@ -1639,7 +1639,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 32,
         categoria: "NEGOCIOS ",
         titular: "Cordobés solucionó un problema mundial: su invento termina con las medias que pierden su par",
-        img: ["assets/imgNoti/id32/1.jpg", "assets/imgNoti/id28/1.jpg"],
+        img: ["./assets/imgNoti/id32/1.jpg", "assets/imgNoti/id28/1.jpg"],
         txt: `
     <p><b>Se trata de un pequeño dispositivo que empezó a desarrollar en 2020, registró en el Instituto Nacional de Propiedad Industrial y acaba de lanzar a la venta. Soluciona el drama de las “medias viudas”. Por qué su inventor cree que tiene un enorme mercado.</b></p>
     
@@ -1787,7 +1787,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 35,
         categoria: "NEGOCIOS",
         titular: "Nuevocentro Shoppping espera en días dos inauguraciones fuertes para dar un salto de público    ",
-        img: ["/assets/imgNoti/id35/1.jpg"],
+        img: ["./assets/imgNoti/id35/1.jpg"],
         txt: `
     <p><b>El centro comercial invirtió 2 millones de dólares en reconvertir el espacio que dejó Falabella. Y activó 40 nuevas propuestas. Las novedades que siguen.</b></p>
     
@@ -1841,7 +1841,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 36,
         categoria: "NEGOCIOS",
         titular: "Voces que suman: se viene un nuevo panel para repensar el turismo",
-        img: ["assets/imgNoti/id36/1.jpg", "assets/imgNoti/id36/2.jpg"],
+        img: ["assets/imgNoti/id36/1.jpg" ],
         txt: `
             <p><b>El encuentro reunirá a especialistas, dirigentes y ejecutivos de líneas aéreas. Se analizarán las fortalezas y las debilidades del sector. La transmisión será el martes 29 de noviembre, desde las 11, por las plataformas de “La Voz”, de “Los Andes” y de “Vía País”.    </b></p>
     
@@ -2105,7 +2105,7 @@ En septiembre llegó el DNI con los tres apellidos. “Cuando lo vi fue un ¡lo 
         id: 41,
         categoria: "CIUDADANOS",
         titular: "Leyes de género: hay muchas normas en el país, pero son difíciles de aplicar        ",
-        img: ["assets/imgNoti/id41/1.jpg"],
+        img: ["./assets/imgNoti/id41/1.jpg"],
         txt: `
     <p><b>Este viernes es el Día de la Eliminación de la Violencia contra las Mujeres. Argentina es uno de los países con más legislación en la materia, aunque su implementación no siempre es fácil.</b></p>
     
