@@ -433,18 +433,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dolarContainer {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 15px;
     background: none;
 
 }
 
 .dolarContainer p {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     background: none;
 }
@@ -452,7 +452,16 @@ body::-webkit-scrollbar-thumb {
 .dolarContainer i {
     background: none;
 }
-
+.weatherContainer{
+    justify-content: space-around;
+    width: 50%;
+    gap: 10px;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: none;
+}
 
 
 /*ESTILOS DE LA SECCION DE PRIMER ULTIMA NOTICIA*/

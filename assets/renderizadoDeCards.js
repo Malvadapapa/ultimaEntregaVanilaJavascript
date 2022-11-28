@@ -24,7 +24,7 @@ const renderHeroNew =() => {
     };
     
 const renderLastestNews =() => {
-const randomNew = diario.sort(function() { return Math.random() - 0.3 })
+const randomNew = diario.sort(function() { return Math.random() - 0.5 })
 const randomslicedNew = randomNew.slice(randomNew.length-4)
 
 

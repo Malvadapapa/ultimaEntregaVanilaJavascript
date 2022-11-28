@@ -42,5 +42,33 @@ console.log(categoria)
           `;
 };
 
-renderNoticia(idDeNoticiaFiltrada[0])
 
+
+const renderOtherNews =() => {
+        const randomOtherNews = diario.sort(function() { return Math.random() - 0.3 })
+        const randomslicedOtherNews = randomOtherNews.slice(randomOtherNews.length-8)
+        
+        
+        return randomslicedOtherNews.map(renderOthertNewsCards)
+        }
+        const renderOthertNewsCards = (randomslicedOtherNews) => {
+         
+            const {categoria, titular, img, id} = randomslicedOtherNews;
+            return renderOtherNewsSection.innerHTML += ` 
+            <div class="ultimaNoticia_card">
+            <a href="renderNoticia.html?id=${id}">
+                <img src="${img[0]}" alt="">
+                <h4>${categoria}</h4>
+                <h2> ${titular}
+                </h2>
+            </a>
+        </div>
+        
+              `;
+        };
+
+
+
+
+        renderOtherNews() 
+        renderNoticia(idDeNoticiaFiltrada[0])

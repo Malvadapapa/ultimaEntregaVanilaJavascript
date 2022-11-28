@@ -32,6 +32,49 @@ const printTecnologiaCards = document.getElementById("sectionTeconologia")
 const printlastestCards = document.getElementById("lastestNewsCards")
 const printLastNewHeroCard = document.getElementById("heroLastNew")
 
+const renderOtherNewsSection =document.getElementById("renderSectionOtherNews")
+
+const renderWeatherSection = document.getElementById("weatherContainerSection")
+
+
+const weatherKey ='e63b8534c62cdd9c734a8a6aed1bb656'
+const lang ='es'
+
+const requestWeather = async (ciudad) => {
+    const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
+    const query =`?q=${ciudad}&lang=${lang}&appid=${weatherKey}&units=metric`
+
+    try{
+
+    const response = await fetch(baseURL+query)
+    const data = await response.json()
+ console.log(data)
+    return renderweather(data)
+
+    }catch(error){
+        console.log(error)
+    }
+ 
+}
+requestWeather('cordoba')
+ 
+
+const renderWeather = (city) =>{
+    return renderWeatherSection.innerHTML += `
+
+     <p>Maxima: ${city.main.temp_max}°C</p> 
+     <p>minima: ${city.main.temp_min}°C</p>
+      <p>Sensacion termica: 28°C</p>
+       <img src="assets/imgweather/01d.png" alt=""> 
+       <p></p>
+    
+    `
+   }
+
+ 
+
+
+
 
  //TOGGLE DE MENU HAMBURGUESA//
 const toogleBurger = ()=> {
