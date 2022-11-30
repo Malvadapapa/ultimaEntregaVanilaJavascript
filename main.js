@@ -44,7 +44,6 @@ const requestDolar = async () => {
     try{
     const response = await fetch(baseURL+query)
     const data = await response.json()
-    console.log(data)
   return renderDolar(data)
     }catch(error){
         console.log(error)
@@ -66,8 +65,6 @@ const renderDolar = (dolar) =>{
         `
        }
 
-
- 
 const weatherKey ='e63b8534c62cdd9c734a8a6aed1bb656'
 const lang ='es'
 const ciudad = 'cordoba'
