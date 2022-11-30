@@ -31,51 +31,78 @@ const printNegociosCards = document.getElementById("sectionNegocios")
 const printTecnologiaCards = document.getElementById("sectionTeconologia")
 const printlastestCards = document.getElementById("lastestNewsCards")
 const printLastNewHeroCard = document.getElementById("heroLastNew")
-
 const renderOtherNewsSection =document.getElementById("renderSectionOtherNews")
-
 const renderWeatherSection = document.getElementById("weatherContainerSection")
+const renderDolarSection = document.getElementById("dolarContainerSection")
 
 
+
+const requestDolar = async () => {
+    const baseURL = 'https://www.dolarsi.com/api/api.php';
+    const query =`?type=valoresprincipales`
+
+    try{
+    const response = await fetch(baseURL+query)
+    const data = await response.json()
+    console.log(data)
+  return renderDolar(data)
+    }catch(error){
+        console.log(error)
+    }}
+
+
+const renderDolar = (dolar) =>{
+ 
+        return renderDolarSection.innerHTML += `
+        <div>
+        <p>Dólar Oficial:</p>
+        <p>Compra: $${dolar[0].casa.compra} Venta:$${dolar[0].casa.venta}</p>
+        </div>
+        <div>
+        <p>Dólar Blue:</p>
+        <p>Compra: $${dolar[1].casa.compra} Venta:$${dolar[1].casa.venta}</p>
+        </div>
+ 
+        `
+       }
+
+
+ 
 const weatherKey ='e63b8534c62cdd9c734a8a6aed1bb656'
 const lang ='es'
+const ciudad = 'cordoba'
+const today = new Date();
+const fechaActual = today.toLocaleString('default', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
 
 const requestWeather = async (ciudad) => {
     const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
     const query =`?q=${ciudad}&lang=${lang}&appid=${weatherKey}&units=metric`
 
     try{
-
     const response = await fetch(baseURL+query)
     const data = await response.json()
- console.log(data)
-    return renderweather(data)
+
+    return renderWeather(data, fechaActual)
 
     }catch(error){
         console.log(error)
     }
  
 }
-requestWeather('cordoba')
- 
 
-const renderWeather = (city) =>{
+const renderWeather = (city,fecha) =>{
+const  {main, weather} = city
     return renderWeatherSection.innerHTML += `
 
-     <p>Maxima: ${city.main.temp_max}°C</p> 
-     <p>minima: ${city.main.temp_min}°C</p>
-      <p>Sensacion termica: 28°C</p>
-       <img src="assets/imgweather/01d.png" alt=""> 
-       <p></p>
-    
+     <p>Maxima: ${Math.round(main.temp_max)}°C</p> 
+     <p>minima: ${Math.round(main.temp_min)}°C</p>
+      <p>Sensacion termica: ${Math.round(main.feels_like)}°C</p>
+       <img src="assets/imgweather/${weather[0].icon}.png" alt=""> 
+       <p>${fecha}</p>
+       
     `
    }
-
  
-
-
-
-
  //TOGGLE DE MENU HAMBURGUESA//
 const toogleBurger = ()=> {
     hamMenu.classList.toggle("active");
@@ -142,7 +169,8 @@ const closeOnClickLogginSection = (e) => {
 
 
   const init = () => {
-
+    requestDolar()
+    requestWeather(ciudad)
     hamMenu.addEventListener("click", toogleBurger);
    burgerContainer.addEventListener("click", closeOnClick);
    burgerSesion.addEventListener("click", toogleLogginSection );
