@@ -46,14 +46,7 @@ const renderLastestNewsCards = (randomslicedNew) => {
       `;
 };
 
-
-
-
-
-
-
-
-
+ 
 const newFilteredByCategoryPolitica = () => {
     const filterPolitica = diario.filter( (e) => e.categoria === "POLÍTICA").sort(function() { return Math.random() - 0.4 })
     const noticiasPoliticaFiltradas = filterPolitica.slice(filterPolitica.length-4)
