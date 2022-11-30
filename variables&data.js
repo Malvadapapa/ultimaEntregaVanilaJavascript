@@ -188,7 +188,7 @@ Según Levine, hay estudios que sugieren que la fertilidad comienza a declinar c
         id: 5,
         categoria: "CIUDADANOS",
         titular: "Sofía, la primera cordobesa que tiene legalmente dos padres y una madre",
-        img: ["assets/imgNoti/id5/1.jpg", "assets/imgNoti/id5/2.jpg"],
+        img: ["assets/imgNoti/id5/1.jpg"],
         txt: `
         <b>La triple filiación siempre fue parte de su vida, pero dice que el aval de la Justicia reafirma su identidad. Pidió llevar los tres apellidos en el DNI y le fue aceptado. El primero es el de la expareja de su madre.</b>
         <p>
