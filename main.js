@@ -71,8 +71,8 @@ const renderDolar = (dolar) =>{
 const weatherKey ='e63b8534c62cdd9c734a8a6aed1bb656'
 const lang ='es'
 const ciudad = 'cordoba'
-const today = new Date();
-const fechaActual = today.toLocaleString('default', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
+const diaDeHoy = new Date();
+const fechaActual = diaDeHoy.toLocaleString('default', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
 
 const requestWeather = async (ciudad) => {
     const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
