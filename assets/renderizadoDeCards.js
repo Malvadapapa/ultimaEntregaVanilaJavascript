@@ -14,7 +14,7 @@ const renderHeroNew =() => {
 
     <div class="ultimasNoticias_principalContainer__new">
         <h3>${categoria}</h3>
-        <h1>${titular.slice(0,65)}...</h1>
+        <h1>${titular.slice(0,95)}...</h1>
         <h2>${txt.slice(0,100)}...CONTINUAR VIENDO
         </h2>
         <h4>Autor: ${autor}</h4>
