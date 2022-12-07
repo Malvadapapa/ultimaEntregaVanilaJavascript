@@ -1,4 +1,20 @@
-
+ScrollReveal().reveal('.headerColorContainer', { delay: 100 }, { distance: '-50px' }, { origin: 'top' });
+ScrollReveal().reveal('.burgerSection', { delay: 250 });
+ScrollReveal().reveal('.dolarandWeatherSection', { delay: 250 });
+ScrollReveal().reveal('.divisores', { delay: 250 });
+ScrollReveal().reveal('.noticiaRenderContainer', { delay: 250 });
+ScrollReveal().reveal('.otherNewsContainer', { delay: 300 });
+ScrollReveal().reveal('.otrasNoticiasRenderTitle', { delay: 250 });
+ScrollReveal().reveal('.ultimasNoticiasSection', { delay: 300 });
+ScrollReveal().reveal('.ultimasNoticias_principalContainer', { delay: 300 });
+ScrollReveal().reveal('.ultimasNoticias_secondaryCards', { delay: 300 });
+ScrollReveal().reveal('.politicaSection', { delay: 200 });
+ScrollReveal().reveal('.ciudadanosSection ', { delay: 200 });
+ScrollReveal().reveal('.sucesosSection', { delay: 200 });
+ScrollReveal().reveal('.negociosSection ', { delay: 200 });
+ScrollReveal().reveal('.footer', { delay: 100 });
+ScrollReveal().reveal('.background', { delay: 100 });
+ 
 
 
 
